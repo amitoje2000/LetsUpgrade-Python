@@ -1,0 +1,24 @@
+# 1) Find all occurrences of substring in the given string
+import re
+a_string = "what we think we become; we are python programmers"
+substring = "we"
+matches = re.finditer(substring, a_string)
+matches_positions = [match.start() for match in matches]
+print(matches_positions)
+
+#Output - [5,14,25]
+
+
+
+# 2) Applying islower() and isupper() to different kind of strings
+str1 = "PYTHONPROGRAMMING"
+print(str1.isupper())
+
+str1 = "PYTHONPROGRAMMING"
+print(str1.islower())
+
+str2 = "pythonprogramming"
+print(str2.islower())
+
+str2 = "pythonprogramming"
+print(str2.isupper())
